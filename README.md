@@ -3,7 +3,7 @@
 This repo contains code from my paper "Generating Pi With A Turing Machine".
 
 ## Using the simulator
-The file `turing.py` is a turing machine simulator. To use it, simply call it from the command line, as pass as a paramater the path to the Turing machine program you want to run, e.g.
+The file `turing.py` is a turing machine simulator. It has no prerequisites other than pygame. To use it, simply call it from the command line, as pass as a paramater the path to the Turing machine program you want to run, e.g.
 
 ```
 python3 turing.py pi.tur
@@ -21,6 +21,13 @@ The above will always carry the assumption that the read/write head starts over 
 python3 turing.pu pi.tur "12345" 2
 ```
 would cause the read/write head to start over the cell containing the symbol "3".
+
+Once the simulator is running, the controls are the following:
+* Space: Toggle manual mode
+* Enter: Run one step of the simulation (only works in manual mode)
+* Left/Right arrow keys: Change speed
+* T: Toggle between "static head" and "static tape" view
+* Escape: Exit simulator
 
 
 ## Using the generator
