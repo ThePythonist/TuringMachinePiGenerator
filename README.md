@@ -12,13 +12,13 @@ python3 turing.py pi.tur
 If you would like to specify the initial contents of the tape, pass a string containing the contents as an additional parameter. Each character of the string will be written into a separate cell. (Note that space characters in the string will be treated as blank cells on the tape.)
 
 ```
-python3 turing.pu pi.tur "12345"
+python3 turing.py pi.tur "12345"
 ```
 
 The above will always carry the assumption that the read/write head starts over the first character in the string (position 0). If you would like to specify a different position for the read/write head, pass this as an additional parameter, e.g. running
 
 ```
-python3 turing.pu pi.tur "12345" 2
+python3 turing.py pi.tur "12345" 2
 ```
 would cause the read/write head to start over the cell containing the symbol "3".
 
