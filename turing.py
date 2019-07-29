@@ -41,7 +41,7 @@ state = "start"
 
 rules = {}
 
-with open(program) as transitionTable:
+with open(program, encoding="utf-8") as transitionTable:
     data = [x.strip() for x in transitionTable.read().strip().split("\n")]
 for index, i in enumerate(data):
     try:
